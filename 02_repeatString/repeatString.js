@@ -1,4 +1,7 @@
 const repeatString = function(myWord, myReps) {
+    if (myReps < 0){
+        return 'ERROR';
+    }
     return(myWord.repeat(myReps));
 };
 
