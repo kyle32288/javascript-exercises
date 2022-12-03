@@ -1,5 +1,8 @@
 const removeFromArray = function(myArray, removeMe) {
-    return myArray.filter(x => x != removeMe);
+    for (let i = 1; i < arguments.length; i++){
+        myArray = myArray.filter(x => x != arguments[i]);
+    }
+    return myArray;
 };
 
 // Do not edit below this line
